@@ -1,0 +1,2 @@
+beginner_tutorials
+-DCATKIN_DEVEL_PREFIX=/home/martin/martin-rtech/devel -DCMAKE_INSTALL_PREFIX=/home/martin/martin-rtech/install -G Unix Makefiles

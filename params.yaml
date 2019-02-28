@@ -1,0 +1,12 @@
+background_b: 255
+background_g: 86
+background_r: 250
+rosdistro: 'kinetic
+
+  '
+roslaunch:
+  uris: {host_martin_hp_elitebook_840_g2__35989: 'http://martin-HP-EliteBook-840-G2:35989/'}
+rosversion: '1.12.14
+
+  '
+run_id: 99bfdbca-3b48-11e9-9b3a-e4f89c2881ba
