@@ -1,0 +1,34 @@
+<launch>
+/*
+start of the launch file with the laucnh tag, so that file is identified as a launch file
+*/
+
+
+	<group ns="turtlesim1">
+		<node pkg="turtlesim" name="sim" type="turtlesim_node"/>
+	</group>
+
+	<group ns="turtlesim2">
+		<node pkg="turtlesim" name="sim" type="turtlesim_node"/>
+	</group>
+
+/*
+Here we start 2 groups with a namespace tag of turtlesim1 and turtlesim2 with a turtlesim node
+with a name of sim. This allows us to start 2 simulators without having name conflicts.
+*/
+
+
+
+	<node pkg="turtlesim" name="mimic" type="mimic">
+		<remap from="input" to="turtlesim1/turtle1"/>
+		<remap from="output" to="turtlesim2/turtle1"/>
+	</node>
+
+/*
+Here we start the mimic node with the topics input and output renamed to turtlesim1 and turtlesim2
+This renaming will cause turtlesim2 to mimic turtlesim1
+*/
+
+</launch>
+
+
