@@ -256,4 +256,17 @@
     <origin rpy="0 ${pi/2} 0" xyz="0 0 0"/>
   </joint>
 
+
+
+    <link name="base_footprint">
+    </link>
+
+    <joint name="from_base_footprint" type="fixed">
+      <axis xyz="0 1 0" rpy="0 0 0" />
+      <parent link="base_footprint"/>
+      <child link="base_link"/>
+      <origin xyz="0 0 ${(bodylen/2)+0.1+wheeldiam}" rpy="0 0 0"/>
+    </joint>
+
+
 </robot>
