@@ -74,6 +74,10 @@ Visualization Manager:
           Show Axes: false
           Show Trail: false
           Value: true
+        eye:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
         gripper_pole:
           Alpha: 1
           Show Axes: false
@@ -160,11 +164,45 @@ Visualization Manager:
       Frame Timeout: 15
       Frames:
         All Enabled: true
+        ar_marker_0:
+          Value: true
+        ar_marker_1:
+          Value: true
+        ar_marker_12:
+          Value: true
+        ar_marker_13:
+          Value: true
+        ar_marker_14:
+          Value: true
+        ar_marker_2:
+          Value: true
+        ar_marker_208:
+          Value: true
+        ar_marker_244:
+          Value: true
+        ar_marker_255:
+          Value: true
+        ar_marker_3:
+          Value: true
+        ar_marker_4:
+          Value: true
+        ar_marker_5:
+          Value: true
+        ar_marker_6:
+          Value: true
+        ar_marker_7:
+          Value: true
+        ar_marker_8:
+          Value: true
+        ar_marker_9:
+          Value: true
         base_footprint:
           Value: true
         base_link:
           Value: true
         box:
+          Value: true
+        eye:
           Value: true
         gripper_pole:
           Value: true
@@ -200,7 +238,7 @@ Visualization Manager:
       Name: TF
       Show Arrows: true
       Show Axes: true
-      Show Names: true
+      Show Names: false
       Tree:
         base_footprint:
           base_link:
@@ -214,7 +252,40 @@ Visualization Manager:
             head:
               box:
                 lens:
-                  {}
+                  ar_marker_0:
+                    {}
+                  ar_marker_1:
+                    {}
+                  ar_marker_12:
+                    {}
+                  ar_marker_13:
+                    {}
+                  ar_marker_14:
+                    {}
+                  ar_marker_2:
+                    {}
+                  ar_marker_208:
+                    {}
+                  ar_marker_244:
+                    {}
+                  ar_marker_255:
+                    {}
+                  ar_marker_3:
+                    {}
+                  ar_marker_4:
+                    {}
+                  ar_marker_5:
+                    {}
+                  ar_marker_6:
+                    {}
+                  ar_marker_7:
+                    {}
+                  ar_marker_8:
+                    {}
+                  ar_marker_9:
+                    {}
+                  eye:
+                    {}
             left_leg:
               left_base:
                 left_back_wheel:
@@ -228,6 +299,14 @@ Visualization Manager:
                 right_front_wheel:
                   {}
       Update Interval: 0
+      Value: true
+    - Class: rviz/Marker
+      Enabled: true
+      Marker Topic: visualization_marker
+      Name: Marker
+      Namespaces:
+        basic_shapes: true
+      Queue Size: 100
       Value: true
   Enabled: true
   Global Options:
@@ -254,25 +333,25 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz/Orbit
-      Distance: 2.57000542
+      Distance: 2.42323017
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.0599999987
         Stereo Focal Distance: 1
         Swap Stereo Eyes: false
         Value: false
       Focal Point:
-        X: 0
-        Y: 0
-        Z: 0
+        X: 0.359641612
+        Y: 0.482796282
+        Z: 0.170643121
       Focal Shape Fixed Size: true
       Focal Shape Size: 0.0500000007
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.00999999978
-      Pitch: 0.0153970923
+      Pitch: 0.689796686
       Target Frame: <Fixed Frame>
       Value: Orbit (rviz)
-      Yaw: 1.53858209
+      Yaw: 5.1517005
     Saved: ~
 Window Geometry:
   Displays:
