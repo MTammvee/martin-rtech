@@ -2,6 +2,5 @@
 	<node pkg="tf" type="static_transform_publisher" name="link1_broadcaster" args="0 0 0 0 0 0 map range 100" />
 	<node pkg ="rviz" type="rviz" name="rviz" args="-d $(find range_visualizer)/config/rangeconfig.rviz" />
 	<node pkg="range_visualizer" type="range_talker" name="range_publisher"/>
-
 </launch>
 
