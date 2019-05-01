@@ -4,3 +4,15 @@
 [submodule "src/turtlebot3_msgs"]
 	path = src/turtlebot3_msgs
 	url = https://github.com/ROBOTIS-GIT/turtlebot3_msgs.git
+[submodule "src/moveit_tutorials"]
+	path = src/moveit_tutorials
+	url = https://github.com/ros-planning/moveit_tutorials.git
+	branch = kinetic-devel
+[submodule "src/panda_moveit_config"]
+	path = src/panda_moveit_config
+	url = https://github.com/ros-planning/panda_moveit_config.git
+	branch = melodic-devel
+[submodule "src/motoman"]
+	path = src/motoman
+	url = https://github.com/ros-industrial/motoman.git
+	branch = kinetic-devel
