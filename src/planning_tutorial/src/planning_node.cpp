@@ -67,14 +67,6 @@ int main(int argc, char** argv)
 
 
 /**
-*Raw pointers are frequently used to refer to the planning group for improved performance.
-**/
-  const robot_state::JointModelGroup* joint_model_group =
-      move_group.getCurrentState()->getJointModelGroup(PLANNING_GROUP);
-
-
-
-/**
 *GETTING BASIC INFORMATION
 *
 *print the reference plane for this robot
@@ -123,11 +115,7 @@ int main(int argc, char** argv)
    target_pose3.position.y += 0.2;
    waypoints.push_back(target_pose3);  // up and left
 
-/**
-*Decrease the oscillations and jumps lvl
-**/
 
-  move_group.setMaxVelocityScalingFactor(0.1);
 
 /**
 *Maintain a sequence of waypoints and the time durations between these waypoints.

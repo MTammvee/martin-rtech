@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<robot name="motoman_sia5d" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+	
+	<xacro:include filename="$(find motoman_sia5d_support)/urdf/sia5d_macro.xacro"/>
+	<xacro:motoman_sia5d prefix="left_"/>
+
+	
+	<xacro:include filename="$(find ur_description)/urdf/ur5.urdf.xacro" />
+	<xacro:ur5_robot prefix="right_" joint_limited="false"/>
+
+	<material name="blue">
+		<color rgba ="0 0 0.8 1"/>
+	</material>
+
+	<link name="base_link">
+		<visual>
+			<geometry>
+				<box size="1 2 0.2"/>
+			</geometry>
+			<material name="blue"/>
+		</visual>
+		<collision>
+			<geometry>
+				<box size="2 4 0.2"/>
+			</geometry>
+		</collision>
+		<inertial>
+			<mass value="10"/>
+			<inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0"/>
+		</inertial>
+	</link>
+
+	
+	<joint name="left" type="fixed">
+		<parent link="base_link"/>
+		<child link="left_base_link"/>
+		<origin xyz="0 -0.5 0.1"/>
+	</joint>
+	
+	
+	<joint name="right" type="fixed">
+		<parent link="base_link"/>
+		<child link="right_base_link"/>
+		<origin xyz="0 0.5 0.1"/>
+	</joint>
+	
+</robot>
