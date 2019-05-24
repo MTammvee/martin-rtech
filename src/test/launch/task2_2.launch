@@ -1,0 +1,6 @@
+<launch>
+
+	<node name="task2_2" pkg="test" type="task2_2"/>
+	<node pkg="rosbag" type="play" name="rosbag" output="screen" args="/home/martin/martin-rtech/src/test/imu.bag"/>
+
+</launch>

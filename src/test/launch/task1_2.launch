@@ -1,0 +1,6 @@
+<launch>
+
+	<node name="task1_2" pkg="test" type="task1_2"/>
+	<node pkg="rosbag" type="play" name="rosbag" output="screen" args="/home/martin/martin-rtech/src/test/positions.bag"/>
+
+</launch>
