@@ -205,5 +205,9 @@ include_directories(
 add_executable(planning_node src/planning_node.cpp)
 target_link_libraries(planning_node ${catkin_LIBRARIES})
 
+add_executable(dual_4_exam src/dual_4_exam.cpp)
+target_link_libraries(dual_4_exam ${catkin_LIBRARIES})
+add_dependencies(dual_4_exam dual_sia5_manipulator_generate_messages_cpp)
+
 
 
