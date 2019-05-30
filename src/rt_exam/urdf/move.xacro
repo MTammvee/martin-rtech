@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="prac_4_exam">
+
+
+
+	<link name="visualization_marker">
+
+	
+    	</link>
+
+
+	<link name="base_footprint">
+    	</link>
+	<joint name="from_base_footprint" type="fixed">
+		<axis xyz="0 1 0" rpy="0 0 0"/>
+		<parent link="base_footprint"/>
+		<child link="visualization_marker"/>
+		<origin xyz="0 0 0.45" rpy="0 0 0"/>
+	</joint>
+	
+
+</robot>
+

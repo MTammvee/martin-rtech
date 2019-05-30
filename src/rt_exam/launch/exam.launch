@@ -1,0 +1,13 @@
+<launch>
+
+	<remap from="/turtle1/cmd_vel" to="/cmd_vel"/>
+	<node pkg="turtlesim" name="turtle_teleop_key" type="turtle_teleop_key"/>
+	<node pkg="r2d2_navigator" name="fake_r2d2_controller" type="fake_r2d2_controller"/>
+	<node pkg="rt_exam" name="pub" type="pub"/>
+	<node name="rviz" pkg="rviz" type="rviz" args="-d $(find rt_exam)/config/conf1.rviz"/>
+	<param name="robot_description" command="$(find xacro)/xacro.py '$(find rt_exam)/urdf/move.xacro'"/>
+	<node name="robot_state_publisher" pkg="robot_state_publisher" type="state_publisher"/>
+	<node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher"/>
+	
+
+</launch>
